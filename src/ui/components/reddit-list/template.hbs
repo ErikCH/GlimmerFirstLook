@@ -1,0 +1,14 @@
+<div>
+  <h3>Reddit List</h3>
+  <button onclick={{action @delete}}>Delete</button>
+  <br />
+  <button onclick={{action @add}}>Add</button>
+  <input type="text" onkeyup={{action @onKeyUp}} />
+  <ul>
+  {{#each @titles key="@index" as |title| }}
+  <li>
+    {{title.data.title}}
+  </li>
+  {{/each}}
+  </ul>
+</div>

@@ -18,4 +18,4 @@ app.registerInitializer({
 app.renderComponent('my-reddit-app', containerElement, null);
 
 app.boot();
-initializeCustomElements(app, ['my-reddit-app']);
+//initializeCustomElements(app, ['my-reddit-app']);
